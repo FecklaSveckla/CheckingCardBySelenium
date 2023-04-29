@@ -16,8 +16,8 @@ class SeleniumTest {
     @BeforeAll
     static void setupClass() {
 
-        //WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\makob\\IdeaProjects\\CheckingCardBySelenium\\driver\\win\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\makob\\IdeaProjects\\CheckingCardBySelenium\\driver\\win\\chromedriver.exe");
 
     }
 
