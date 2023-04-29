@@ -17,7 +17,7 @@ class SeleniumTest {
     static void setupClass() {
 
         //WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./driver/win/chromedriver.exe");
 
     }
 
@@ -41,7 +41,7 @@ class SeleniumTest {
     }
 
     @Test
-    void shouldSubmitRequest() {
+    void shouldSendForm() {
 
         driver.findElement( By.cssSelector("[data-test-id=name] input")).sendKeys("Петров Николай");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79261234567");
